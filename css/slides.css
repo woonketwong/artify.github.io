@@ -1,0 +1,69 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#container{
+	width: 100%;
+	height: 100%;
+	position:relative;
+}
+
+#container .img:first-child {
+	display: block;
+}
+
+#container .img {
+	display:none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+#container .img .info-container-wrapper {
+	position: absolute;
+	right: -260px;
+	bottom: 10px;
+	width: 240px;
+	height: 60px;
+	padding: 5px;
+	color: white;
+	border: 1px solid lightgray;
+	background-color: rgba( 0, 0, 0, 0.4 );
+	border-radius: 5px;
+	transition: right linear 0.3s;
+}
+
+#container .img .info-container-wrapper.slide-in {
+	right: 10px;
+	transition: right linear 0.3s;
+}
+
+#container .img .info-container-wrapper .info-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#container .img .info-container-wrapper .info-container .info {
+	position: absolute;
+	top: 1px;
+	width: 182px;
+	padding-right: 55px;
+}
+
+#container .img .info-container-wrapper .info-container .info .title {
+	font-size: 20px;
+}
+
+#container .img .info-container-wrapper .info-container .info .artist {
+	font-size: 17px;
+	font-style: italic;
+}
+
+#container .img .info-container-wrapper .info-container .qr-code {
+	float: right;
+	margin-top: 5px;
+}
