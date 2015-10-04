@@ -54,7 +54,7 @@ $(window).load(function(){
 			}, TIMEOUT );
 		}
 
-		// timeoutID=setTimeout(function(){
-		// 	handler2();
-		// 	}, TIMEOUT );
+		timeoutID=setTimeout(function(){
+			handler2();
+			}, TIMEOUT );
 });
